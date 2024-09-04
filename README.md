@@ -1,4 +1,4 @@
-# Mening_birinchi_dasturim
+<h1>Mening birinchi dasturimga xush kelibsiz </h1> 
 # Assalomu Alaykum hammaga bu yerga men birinchi telegram bot dasturimni yukladim!
 [![PyPi Package Version](https://img.shields.io/pypi/v/pyTelegramBotAPI.svg)](https://pypi.python.org/pypi/pyTelegramBotAPI)
 [![Supported Python versions](https://img.shields.io/pypi/pyversions/pyTelegramBotAPI.svg)](https://pypi.python.org/pypi/pyTelegramBotAPI)
