@@ -1,5 +1,6 @@
 <h1>Mening birinchi dasturimga xush kelibsiz </h1> 
-<p align="center">Assalomu Alaykum hammaga bu yerga men birinchi telegram bot dasturimni yukladim!</p>
+<p align="center">Assalomu Alaykum hammaga bu yerga men birinchi telegram bot dasturimni yukladim!</p>.
+
 [![PyPi Package Version](https://img.shields.io/pypi/v/pyTelegramBotAPI.svg)](https://pypi.python.org/pypi/pyTelegramBotAPI)
 [![Supported Python versions](https://img.shields.io/pypi/pyversions/pyTelegramBotAPI.svg)](https://pypi.python.org/pypi/pyTelegramBotAPI)
 [![Documentation Status](https://readthedocs.org/projects/pytba/badge/?version=latest)](https://pytba.readthedocs.io/en/latest/?badge=latest)
