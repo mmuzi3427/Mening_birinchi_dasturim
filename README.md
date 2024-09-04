@@ -1,4 +1,4 @@
-<h1>Mening birinchi dasturimga xush kelibsiz </h1> 
+<p align="center"><h1>Mening birinchi dasturimga xush kelibsiz </h1></p>
 <p align="center">Assalomu Alaykum hammaga bu yerga men birinchi telegram bot dasturimni yukladim!</p>
 
 [![PyPi Package Version](https://img.shields.io/pypi/v/pyTelegramBotAPI.svg)](https://pypi.python.org/pypi/pyTelegramBotAPI)
