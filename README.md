@@ -9,5 +9,5 @@
 [![PyPi status](https://img.shields.io/pypi/status/pytelegrambotapi.svg?style=flat-square)](https://pypi.python.org/pypi/pytelegrambotapi)
 
 # <p align="center">pyTelegramBotAPI
-<a href="https://t.me/Matematikauniversalbot">Meni birinchi Telegram botim</a>
+<h1><a href="https://t.me/Matematikauniversalbot">Meni birinchi Telegram botim</a></h1>
 ## <p align="center">Qo'llab-quvvatlanadigan Bot API versiyasi: <a href="https://core.telegram.org/bots/api#august-14-2024"><img src="https://img.shields.io/badge/Bot%20API-7.9-blue?logo=telegram" alt="Supported Bot API version"></a>
