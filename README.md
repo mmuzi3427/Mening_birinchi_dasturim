@@ -8,4 +8,4 @@
 
 # <p align="center">pyTelegramBotAPI
 
-## <p align="center">Supported Bot API version: <a href="https://core.telegram.org/bots/api#august-14-2024"><img src="https://img.shields.io/badge/Bot%20API-7.9-blue?logo=telegram" alt="Supported Bot API version"></a>
+## <p align="center">Qo'llab-quvvatlanadigan Bot API versiyasi: <a href="https://core.telegram.org/bots/api#august-14-2024"><img src="https://img.shields.io/badge/Bot%20API-7.9-blue?logo=telegram" alt="Supported Bot API version"></a>
