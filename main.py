@@ -387,4 +387,84 @@ def call(call):
                 wiki("gʻ")
             elif call.data =="tutuq":
                 wiki("ʼ")
-            
+            elif call.data =="z":
+                wiki("z")
+            elif call.data =="x":
+                wiki("x")
+            elif call.data =="c":
+                wiki("c")
+            elif call.data =="v":
+                wiki("v")
+            elif call.data =="b":
+                wiki("b")
+            elif call.data =="n":
+                wiki("n")
+            elif call.data =="m":
+                wiki("m")
+            elif call.data ==",":
+                wiki(",")
+            elif call.data =="pro":
+                wiki(" ")
+            elif call.data ==".":
+                funcs.addwiki(call.from_user.id, ". ")
+                bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=f"🔎\n\n{funcs.getmatn(call.from_user.id)}|", reply_markup=kvuz.kv())
+            elif call.data =="Q":
+                wiki("Q")
+            elif call.data =="W":
+                wiki("W")
+            elif call.data =="E":
+                wiki("E")
+            elif call.data =="R":
+                wiki("R")
+            elif call.data =="T":
+                wiki("T")
+            elif call.data =="Y":
+                wiki("Y")
+            elif call.data =="U":
+                wiki("U")
+            elif call.data =="I":
+                wiki("I")
+            elif call.data =="O":
+                wiki("O")
+            elif call.data =="P":
+                wiki("P")
+            elif call.data =="O1":
+                wiki("Oʻ")
+            elif call.data =="A":
+                wiki("A")
+            elif call.data =="S":
+                wiki("S")
+            elif call.data =="D":
+                wiki("D")
+            elif call.data =="F":
+                wiki("F")
+            elif call.data =="G":
+                wiki("G")
+            elif call.data =="H":
+                wiki("H")
+            elif call.data =="J":
+                wiki("J")
+            elif call.data =="K":
+                wiki("K")
+            elif call.data =="L":
+                wiki("L")
+            elif call.data =="G1":
+                wiki("Gʻ")
+            elif call.data =="Z":
+                wiki("Z")
+            elif call.data =="X":
+                wiki("X")
+            elif call.data =="C":
+                wiki("C")
+            elif call.data =="V":
+                wiki("V")
+            elif call.data =="B":
+                wiki("B")
+            elif call.data =="N":
+                wiki("N")
+            elif call.data =="M":
+                wiki("M")
+            elif call.data =="kichkina":
+                wiki("")
+            elif call.data == "katta":
+                bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=f"🔎\n\n{funcs.getmatn(call.from_user.id)}|", reply_markup=kvuz.kv())
