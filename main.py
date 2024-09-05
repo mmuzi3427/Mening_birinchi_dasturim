@@ -518,9 +518,6 @@ def call(call):
             elif call.data == "A4":
                 delta("4). A)❌  B)☑️\n")
                 bot.answer_callback_query(callback_query_id=call.id, text="🚫", show_alert=True)
-            elif call.data == "A4":
-                delta("4). A)❌  B)☑️\n")
-                bot.answer_callback_query(callback_query_id=call.id, text="🚫", show_alert=True)
                 bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text="5). Hisoblang:  1430 : 26 : 5 = ?\nA) 9\nB) 11\nC) 12", reply_markup=test5())
             elif call.data == "B4":
                 delta("4). B)✅\n")
