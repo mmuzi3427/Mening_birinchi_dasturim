@@ -811,3 +811,45 @@ def call(call):
         elif call.data == "qoshimcha":
             bot.answer_callback_query(callback_query_id=call.id, text="Скоро!", show_alert=True)
 
+def get1(m):
+    test.addism(m.from_user.id, m.text)
+    bot.delete_message(m.chat.id, m.message_id)
+    bot.delete_message(m.chat.id, m.message_id - 1)
+    bot.send_message(m.chat.id, "Ism tahrirlandi! ✅")
+    bot.send_message(m.chat.id, f"Bot sozlamalariga xush kelibsiz qaysi ma'lumotni kiritmoqchisiz yoki oʻzgartirmoqchisiz!\n\nSizning ma'lumotlaringiz!\nIsmingiz: {test.ism(m.from_user.id)}\nFamiliyangiz: {test.familiya(m.from_user.id)}\nYoshingiz: {test.yosh(m.from_user.id)} da", reply_markup=edit.test1())
+    bot.send_message(admin_id, f"Bot sozlamalari orqali ma'lumot oʻzgartirildi✏️\n Oʻzgartirilgan ma'lumot ism ✅!\n\nFoydalanuvchi ma'lumotlari!\nIsmi: {test.ism(m.from_user.id)}✅\nFamiliyasi: {test.familiya(m.from_user.id)}\nYoshi: {test.yosh(m.from_user.id)} da\nID: {m.from_user.id}\nUsername: @{m.from_user.username}", reply_markup=delete())
+def get_name(m):
+    test.addism(m.from_user.id, m.text)
+    bot.delete_message(m.chat.id, m.message_id)
+    bot.delete_message(m.chat.id, m.message_id - 1)
+    bot.delete_message(m.chat.id, m.message_id - 2)
+    bot.delete_message(m.chat.id, m.message_id - 3)
+    bot.send_message(m.chat.id, "Yaxshi endi familiyangizni kiriting!")
+    bot.register_next_step_handler(m, get_yosh)
+def get2(m):
+    test.addfamiliya(m.from_user.id, m.text)
+    bot.delete_message(m.chat.id, m.message_id)
+    bot.delete_message(m.chat.id, m.message_id - 1)
+    bot.send_message(m.chat.id, "Familiya tahrirlandi! ✅")
+    bot.send_message(m.chat.id, f"Bot sozlamalariga xush kelibsiz qaysi ma'lumotni kiritmoqchisiz yoki oʻzgartirmoqchisiz!\n\nSizning ma'lumotlaringiz!\nIsmingiz: {test.ism(m.from_user.id)}\nFamiliyangiz: {test.familiya(m.from_user.id)}\nYoshingiz: {test.yosh(m.from_user.id)} da", reply_markup=edit.test1())
+    bot.send_message(admin_id, f"Bot sozlamalari orqali ma'lumot oʻzgartirildi✏️\n Oʻzgartirilgan ma'lumot familiya ✅!\n\nFoydalanuvchi ma'lumotlari!\nIsmi: {test.ism(m.from_user.id)}\nFamiliyasi: {test.familiya(m.from_user.id)}✅\nYoshi: {test.yosh(m.from_user.id)} da\nID: {m.from_user.id}\nUsername: @{m.from_user.username}", reply_markup=delete())
+def get_yosh(m):
+    test.addfamiliya(m.from_user.id, m.text)
+    bot.delete_message(m.chat.id, m.message_id)
+    bot.delete_message(m.chat.id, m.message_id - 1)
+    bot.send_message(m.chat.id, "Yoshingiz nechada?")
+    bot.register_next_step_handler(m, tasdiqlash)
+def get3(m):
+    test.addyosh(m.from_user.id, m.text)
+    bot.delete_message(m.chat.id, m.message_id)
+    bot.delete_message(m.chat.id, m.message_id - 1)
+    bot.send_message(m.chat.id, "Yosh tahrirlandi! ✅")
+    bot.send_message(m.chat.id, f"Bot sozlamalariga xush kelibsiz qaysi ma'lumotni kiritmoqchisiz yoki oʻzgartirmoqchisiz!\n\nSizning ma'lumotlaringiz!\nIsmingiz: {test.ism(m.from_user.id)}\nFamiliyangiz: {test.familiya(m.from_user.id)}\nYoshingiz: {test.yosh(m.from_user.id)} da", reply_markup=edit.test1())
+    bot.send_message(admin_id, f"Bot sozlamalari orqali ma'lumot oʻzgartirildi✏️\n Oʻzgartirilgan ma'lumot yosh ✅!\n\nFoydalanuvchi ma'lumotlari!\nIsmi: {test.ism(m.from_user.id)}\nFamiliyasi: {test.familiya(m.from_user.id)}\nYoshi: {test.yosh(m.from_user.id)} da ✅\nID: {m.from_user.id}\nUsername: @{m.from_user.username}", reply_markup=delete())
+def tasdiqlash(m):
+    test.addyosh(m.from_user.id, m.text)
+    bot.delete_message(m.chat.id, m.message_id)
+    bot.delete_message(m.chat.id, m.message_id - 1)
+    bot.send_message(admin_id, f"Yangi fiydalanuvchi\nIsmi: {test.ism(m.from_user.id)}\n<b>Familiyasi: </b> {test.familiya(m.from_user.id)}\nYoshi: {test.yosh(m.from_user.id)}\nUsername: @{m.from_user.username}\nID: {m.from_user.id}", parse_mode='html')
+    bot.send_message(m.chat.id, f"Ma'lumotlaringiz toʻgʻri ekanligini tekshiring!\n\nIsmingiz: {test.ism(m.from_user.id)}\nFamiliyangiz: {test.familiya(m.from_user.id)}\nYoshingiz: {test.yosh(m.from_user.id)}\n\n\n\n\nAks holda <b>«Testda qatnashish»</b> tugmasini bosib qayta roʻyxatdan oʻting!", parse_mode='html', reply_markup=true())
+bot.infinity_polling()
