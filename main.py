@@ -681,3 +681,47 @@ def call(call):
                 bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
             elif call.data == "32_dars":
                 bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data =="matematika":
+                bot.delete_message(call.message.chat.id, call.message.message_id)
+                bot.send_message(call.message.chat.id, "Matematika kursi darslari tanlang!", reply_markup=Video.videos())
+            def sonlar(n):
+                funcs.changeson(call.message.chat.id, n)
+                d = funcs.getSon(call.from_user.id)
+                matn = ""
+                try:
+                    for i in d:
+                        matn += i
+                    bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=f"Hozirgi holat:\n\n{matn}", reply_markup=Calcbtn.calcb())
+                except:
+                    bot.answer_callback_query(call.id, "Xatolik yuz berdi!\nEndi kalkulyator siz uchun umuman ishlamasligi mumkin!!!\nBunga oʻzingiz aybdorsiz...",  show_alert=True)
+            if call.data == "1":
+                sonlar(1)
+            elif call.data =="2":
+                sonlar(2)
+            elif call.data =="3":
+                sonlar(3)
+            elif call.data =="4":
+                sonlar(4)
+            elif call.data =="5":
+                sonlar(5)
+            elif call.data =="6":
+                sonlar(6)
+            elif call.data =="7":
+                sonlar(7)
+            elif call.data =="8":
+                sonlar(8)
+            elif call.data =="9":
+                sonlar(9)
+            elif call.data =="0":
+                sonlar(0)
+            def amal(amal):
+                funcs.changeamal(call.from_user.id, amal)
+                try:
+                    data = funcs.getSon(call.from_user.id)
+                    funcs.belgi(call.from_user.id)
+                    matn = ""
+                    for i in data:
+                        matn += i
+                    bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=f"Hozirgi holat:\n\n{matn}", reply_markup=Calcbtn.calcb())
+                except:
+                    bot.answer_callback_query(call.id, "Xatolik: ❌❌❌❌❌", show_alert=True)
