@@ -618,7 +618,7 @@ def call(call):
             elif call.data == "delete1":
                 bot.delete_message(call.message.chat.id, call.message.message_id)
             elif call.data == "1_dars":
-                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli Botga video joʻnatsangiz u oʻzi tokenni qaytaradi oʻsha tokenni yozing!", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
             elif call.data == "2_dars":
                 bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
             elif call.data == "3_dars":
@@ -672,4 +672,12 @@ def call(call):
             elif call.data == "27_dars":
                 bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
             elif call.data == "28_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "29_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "30_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "31_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "32_dars":
                 bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
