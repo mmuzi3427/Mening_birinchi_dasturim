@@ -725,3 +725,53 @@ def call(call):
                     bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=f"Hozirgi holat:\n\n{matn}", reply_markup=Calcbtn.calcb())
                 except:
                     bot.answer_callback_query(call.id, "Xatolik: ❌❌❌❌❌", show_alert=True)
+            if call.data == "+":
+                amal("+")
+            elif call.data =="-":
+                amal("-")
+            elif call.data == "*":
+                amal("*")
+            elif call.data == "/":
+                amal("//")
+            elif call.data == "=":
+                try:
+                    bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=f"Natija:\n\n{funcs.getRes(call.from_user.id)}", reply_markup=Calcbtn.calcb())
+                    funcs.davomi(call.from_user.id, funcs.getRes(call.from_user.id))
+                except:
+                    bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text="Xtolik yuz berdi!", reply_markup=Calcbtn.calcb())
+                    funcs.toza(call.from_user.id)
+        else:
+            bot.delete_message(call.message.chat.id, call.message.message_id)
+            bot.answer_callback_query(callback_query_id=call.id, text="Barcha kanallarga obuna boʻlishingiz shart! ✅", show_alert=True)
+            bot.send_message(call.message.chat.id, "Kanallarga obuna boʻling!", reply_markup=obuna())
+    elif call.from_user.language_code == "ru":
+        def son(n):
+            funcs.changeson(call.from_user.id, n)
+            try:
+                d = funcs.getSon(call.from_user.id)
+                matn = ""
+                for i in d:
+                    matn += i
+                bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=f"Текущий статус:\n\n{matn}", reply_markup=Calcbtn.calcb())
+            except:
+                bot.answer_callback_query(call.id, "Произошла ошибка ❌", show_alert=True)
+        if call.data == "1":
+            son(1)
+        elif call.data == "2":
+            son(2)
+        elif call.data == "3":
+            son(3)
+        elif call.data == "4":
+            son(4)
+        elif call.data =="5":
+            son(5)
+        elif call.data =="6":
+            son(6)
+        elif call.data =="7":
+            son(7)
+        elif call.data =="8":
+            son(8)
+        elif call.data =="9":
+            son(9)
+        elif call.data =="0":
+            son(0)
