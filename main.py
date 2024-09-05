@@ -852,4 +852,4 @@ def tasdiqlash(m):
     bot.delete_message(m.chat.id, m.message_id - 1)
     bot.send_message(admin_id, f"Yangi fiydalanuvchi\nIsmi: {test.ism(m.from_user.id)}\n<b>Familiyasi: </b> {test.familiya(m.from_user.id)}\nYoshi: {test.yosh(m.from_user.id)}\nUsername: @{m.from_user.username}\nID: {m.from_user.id}", parse_mode='html')
     bot.send_message(m.chat.id, f"Ma'lumotlaringiz toʻgʻri ekanligini tekshiring!\n\nIsmingiz: {test.ism(m.from_user.id)}\nFamiliyangiz: {test.familiya(m.from_user.id)}\nYoshingiz: {test.yosh(m.from_user.id)}\n\n\n\n\nAks holda <b>«Testda qatnashish»</b> tugmasini bosib qayta roʻyxatdan oʻting!", parse_mode='html', reply_markup=true())
-bot.infinity_polling()
+bot.infinity_polling(skip_pending = True)
