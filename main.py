@@ -775,3 +775,39 @@ def call(call):
             son(9)
         elif call.data =="0":
             son(0)
+        def a(a):
+            funcs.changeamal(call.from_user.id, a)
+            try:
+                dat = funcs.getSon(call.from_user.id)
+                funcs.belgi(call.from_user.id)
+                mat = ""
+                for i in dat:
+                    mat += i
+                bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=f"Текущий статус:\n\n{mat}", reply_markup=Calcbtn.calcb())
+            except:
+                bot.answer_callback_query(call.id, "Произошла ошибка ❌", show_alert=True)
+        if call.data == "+":
+            a("+")
+        elif call.data == "-":
+            a("-")
+        elif call.data == "*":
+            a("*")
+        elif call.data == "/":
+            a("//")
+        elif call.data == "toza":
+            try:
+                bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text="История калькулятора очищена, и вы можете продолжить расчет!...", reply_markup=Calcbtn.calcb())
+                funcs.toza(call.from_user.id)
+            except:
+                bot.answer_callback_query(callback_query_id=call.id, text="Слишком много попыток ❌\nДанные удалены!\nВы можете продолжить подсчет, нажимая на цифры. Все начинается с 0 ✅", show_alert=True)
+        elif call.data == "=":
+            try:
+                bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=f"Результат:\n\n{funcs.getRes(call.from_user.id)}", reply_markup=Calcbtn.calcb())
+                funcs.davomi(call.from_user.id, funcs.getRes(call.from_user.id))
+            except:
+                bot.answer_callback_query(call.id, "Произошла ошибка ❌ ♻️", show_alert=True)
+        elif call.data == "delru":
+            bot.delete_message(call.message.chat.id, call.message.message_id)
+        elif call.data == "qoshimcha":
+            bot.answer_callback_query(callback_query_id=call.id, text="Скоро!", show_alert=True)
+
