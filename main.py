@@ -593,3 +593,83 @@ def call(call):
                 delta("9). C)❌  A)☑️\n")
                 bot.answer_callback_query(callback_query_id=call.id, text="🚫", show_alert=True)
                 bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text="10). Hisoblang:  ( 456 + 566 ) : 2= ?\nA) 502\nB) 511\nC) 521", reply_markup=test10())
+            elif call.data == "A10":
+                delta("10). A)❌  B)☑️")
+                bot.delete_message(call.message.chat.id, call.message.message_id)
+                bot.answer_callback_query(callback_query_id=call.id, text="🚫", show_alert=True)
+                bot.send_message(call.message.chat.id, f"{Nat.natol(call.from_user.id)}", reply_markup=Nat.yangi())
+                bot.send_message(call.message.chat.id, f"Jami savollar soni: 10 ta\nToʻgʻri javoblar soni: { Nat.h(call.from_user.id)} ta")
+                Nat.delete(call.from_user.id)
+            elif call.data == "B10":
+                delta("10). B)✅")
+                n()
+                bot.delete_message(call.message.chat.id, call.message.message_id)
+                bot.answer_callback_query(callback_query_id=call.id, text="✅", show_alert=True)
+                bot.send_message(call.message.chat.id, f"{Nat.natol(call.from_user.id)}", reply_markup=Nat.yangi())
+                bot.send_message(call.message.chat.id, f"Jami savollar soni: 10 ta\nToʻgʻri javoblar soni: {Nat.h(call.from_user.id)} ta")
+                Nat.delete(call.from_user.id)
+            elif call.data == "C10":
+                delta("10). C)❌  B)☑️")
+                bot.delete_message(call.message.chat.id, call.message.message_id)
+                bot.answer_callback_query(callback_query_id=call.id, text="🚫", show_alert=True)
+                bot.send_message(call.message.chat.id, f"{Nat.natol(call.from_user.id)}", reply_markup=Nat.yangi())
+                bot.send_message(call.message.chat.id, f"Jami savollar soni: 10 ta\nToʻgʻri javoblar soni: {Nat.h(call.from_user.id)} ta")
+                Nat.delete(call.from_user.id)
+            elif call.data == "delete1":
+                bot.delete_message(call.message.chat.id, call.message.message_id)
+            elif call.data == "1_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "2_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "3_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "4_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "5_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "6_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "7_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "8_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "9_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "10_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "11_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "12_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "13_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "14_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "15_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "16_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "17_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "18_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "19_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "20_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "21_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "22_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "23_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "24_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "25_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "26_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "27_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
+            elif call.data == "28_dars":
+                bot.send_video(call.message.chat.id, "video tokeni yoki telegramda joylashgan video urli", caption="<b>🎞 Video\n•   Hajmi -- 483.8 MB\n•   Manba --  <a href='https://www.youtube.com/'>YouTube</a>\n\n<i><u><a href='https://t.me/Matematikauniversalbot'>Matematika | Rasmiy 𝗕𝗢𝗧</a></u></i></b>", parse_mode="html")
