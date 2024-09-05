@@ -468,6 +468,56 @@ def call(call):
                 wiki("")
             elif call.data == "katta":
                 bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=f"🔎\n\n{funcs.getmatn(call.from_user.id)}|", reply_markup=kvuz.kv())
+            elif call.data == "text":
+                bot.delete_message(call.message.chat.id, call.message.message_id)
+                bot.send_message(call.message.chat.id, "Jami savollar soni: 10\nTest ishlashni boshladik ❗️❗️❗️\n⏰ Vaqt belgilanmagan\n\nNatijalarni xohlagan payti chiqish tugmasi orqali ko'rishingiz mumkin 👇", reply_markup=Nat.qayt())
+                bot.send_message(call.message.chat.id, "1). Hisoblang:  -78+1745 = ?\nA) 1567\nB) 1667\nC) 1777", reply_markup=test1())
+            def delta(natija):
+                Nat.nat(call.from_user.id, natija)
+            def n():
+                Nat.true(call.from_user.id)
+            if call.data == "A1":
+                delta("1). A)❌  B)☑️\n")
+                bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text="2). Hisoblang:\n( 55 + 344 ) -- ( 122 + 44 ) = ? \nA) 203\nB) 213\nC) 233", reply_markup=test2())
+                bot.answer_callback_query(callback_query_id=call.id, text="🚫", show_alert=True)
+            elif call.data == "B1":
+                delta("1). B)✅\n")
+                n()
+                bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text="2). Hisoblang:\n( 55 + 344 ) -- ( 122 + 44 ) = ? \nA) 203\nB) 213\nC) 233", reply_markup=test2())
+                bot.answer_callback_query(callback_query_id=call.id, text="✅", show_alert=True)
+            elif call.data == "C1":
+                delta("1). C)❌ B)☑️\n")
+                bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text="2). Hisoblang:\n( 55 + 344 ) -- ( 122 + 44 ) = ? \nA) 203\nB) 213\nC) 233", reply_markup=test2())
+                bot.answer_callback_query(callback_query_id=call.id, text="🚫", show_alert=True)
+            elif call.data == "A2":
+                delta("2). A)❌  C)☑️\n")
+                bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text="3). Hisoblang:  0,25*250= ?\nA) 62,5\nB) 63,5\nC) 64,5", reply_markup=test3())
+                bot.answer_callback_query(callback_query_id=call.id, text="🚫", show_alert=True)
+            elif call.data == "B2":
+                delta("2). B)❌  C)☑️\n")
+                bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text="3). Hisoblang:  0,25*250= ?\nA) 62,5\nB) 63,5\nC) 64,5", reply_markup=test3())
+                bot.answer_callback_query(callback_query_id=call.id, text="🚫", show_alert=True)
+            elif call.data == "C2":
+                delta("2). C)✅\n")
+                n()
+                bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text="3). Hisoblang:  0,25*250= ?\nA) 62,5\nB) 63,5\nC) 64,5", reply_markup=test3())
+                bot.answer_callback_query(callback_query_id=call.id, text="✅", show_alert=True)
+            elif call.data == "A3":
+                delta("3). A)✅\n")
+                n()
+                bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text="4). Hisoblang :   ( 33 * 6 ) : 4 = ?\nA) 48,5\nB) 49,5\nC) 50,5", reply_markup=test4())
+                bot.answer_callback_query(callback_query_id=call.id, text="✅", show_alert=True)
+            elif call.data == "B3":
+                delta("3). B)❌  A)☑️\n")
+                bot.answer_callback_query(callback_query_id=call.id, text="🚫", show_alert=True)
+                bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text="4). Hisoblang :   ( 33 * 6 ) : 4 = ?\nA) 48,5\nB) 49,5\nC) 50,5", reply_markup=test4())
+            elif call.data == "C3":
+                delta("3). C)❌  A)☑️\n")
+                bot.answer_callback_query(callback_query_id=call.id, text="🚫", show_alert=True)
+                bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text="4). Hisoblang :   ( 33 * 6 ) : 4 = ?\nA) 48,5\nB) 49,5\nC) 50,5", reply_markup=test4())
+            elif call.data == "A4":
+                delta("4). A)❌  B)☑️\n")
+                bot.answer_callback_query(callback_query_id=call.id, text="🚫", show_alert=True)
             elif call.data == "A4":
                 delta("4). A)❌  B)☑️\n")
                 bot.answer_callback_query(callback_query_id=call.id, text="🚫", show_alert=True)
