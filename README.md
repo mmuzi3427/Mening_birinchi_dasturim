@@ -12,3 +12,12 @@
 <h1><a href="https://t.me/Matematikauniversalbot">Meni birinchi Telegram botim</a></h1>
 
 ## <p align="center">Qo'llab-quvvatlanadigan Bot API versiyasi: <a href="https://core.telegram.org/bots/api#august-14-2024"><img src="https://img.shields.io/badge/Bot%20API-7.9-blue?logo=telegram" alt="Supported Bot API version"></a>
+
+
+
+
+
+.. image:: https://raw.githubusercontent.com/python-telegram-bot/logos/master/logo-text/png/ptb-logo-text_768.png
+   :align: center
+   :target: https://python-telegram-bot.org
+   :alt: python-telegram-bot Logo
