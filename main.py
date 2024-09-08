@@ -738,7 +738,7 @@ def call(call):
                     bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=f"Natija:\n\n{funcs.getRes(call.from_user.id)}", reply_markup=Calcbtn.calcb())
                     funcs.davomi(call.from_user.id, funcs.getRes(call.from_user.id))
                 except:
-                    bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text="Xtolik yuz berdi!", reply_markup=Calcbtn.calcb())
+                    bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text="Xatolik yuz berdi!", reply_markup=Calcbtn.calcb())
                     funcs.toza(call.from_user.id)
         else:
             bot.delete_message(call.message.chat.id, call.message.message_id)
