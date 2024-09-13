@@ -23,7 +23,7 @@ son2 = 0
 amal = ""
 ildiz = 0
 text = ""
-bot = TeleBot("7536032120:AAESoo_NJXD7DYgz6qcfUgv9zL7VU8VR010")
+bot = TeleBot("Token")
 @bot.message_handler(commands=['admin'])
 def admin1(m):
     if m.from_user.id == master_id:
