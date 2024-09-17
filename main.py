@@ -43,6 +43,8 @@ def getme(m):
         bot.send_message(m.chat.id, "⚽")
     except:
         bot.send_message(m.chat.id, "Xabar yuborilmadi?")
+def mdel():
+    return ReplyKeyboardRemove()
 def delete():
     deleteInline = InlineKeyboardMarkup()
     deleteInline.add(InlineKeyboardButton("✖️  Oʻchirirish" , callback_data="delete1"))
@@ -209,7 +211,7 @@ def get_text(m):
                     bot.delete_message(m.chat.id, m.message_id)
                     bot.send_message(m.chat.id, "👋")
                     bot.send_message(m.chat.id, "👋\nKeling testni boshlashdan oldin siz bilan tanishib olamiz! ✅")
-                    bot.send_message(m.chat.id, "Iltimos ismingizni kiriting!")
+                    bot.send_message(m.chat.id, "Iltimos ismingizni kiriting!", reply_markup=mdel())
                     bot.register_next_step_handler(m, get_name)
             elif m.text == 'Tasodifiy raqam':
                 bot.delete_message(m.chat.id, m.message_id)
@@ -227,7 +229,7 @@ def get_text(m):
                 bot.send_message(m.chat.id, "Sonni kiriting")
                 bot.register_next_step_handler(m, get_kub)
             else:
-                bot.send_message(m.chat.id, "❌ Noma'lum buyruq!\n\nSiz to'g'ridan-to'g'ri bot chatiga xabar yubordingiz, yoki\nbot tuzilishi yaratuvchisi tomonidan o'zgartirilgan boʻlishi mumkin.\n\nℹ️ Xabarlarni to'g'ridan-to'g'ri botga yubormang yoki\n/start orqali bot menyusini yangilang")
+                bot.send_message(m.chat.id, "❌ Noma'lum buyruq!\n\nSiz to'g'ridan-to'g'ri bot chatiga xabar yubordingiz, yoki\nbot tuzilishi yaratuvchisi tomonidan o'zgartirilgan boʻlishi mumkin.\n\nℹ️ Xabarlarni to'g'ridan-to'g'ri botga yubormang yoki\n/start orqali bot menyusini yangilang", reply_markup=mdel())
         else:
             bot.delete_message(m.chat.id, m.message_id)
             bot.send_message(m.chat.id, "Kanallarga obuna boʻling!", reply_markup=obuna())
