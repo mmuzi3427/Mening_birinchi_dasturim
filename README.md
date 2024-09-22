@@ -13,7 +13,11 @@
 
 ## <p align="center">Qo'llab-quvvatlanadigan Bot API versiyasi: <a href="https://core.telegram.org/bots/api#august-14-2024"><img src="https://img.shields.io/badge/Bot%20API-7.9-blue?logo=telegram" alt="Supported Bot API version"></a>
 
+```python
+import telebot
 
+bot = telebot.TeleBot("TOKEN", parse_mode=None) # You can set parse_mode by default. HTML or MARKDOWN
+```
 
 
 
