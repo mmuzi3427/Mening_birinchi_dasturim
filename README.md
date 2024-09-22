@@ -16,10 +16,13 @@
 ```python
 import telebot
 
-bot = telebot.TeleBot("TOKEN", parse_mode=None)
+bot = telebot.TeleBot("7698002161:AAETkVO9y5SiPw_XRVIhlTpiZyDx5wxLiyY", parse_mode=None)# @BotFather dan olingan bot tokeni
+
 @bot.message_handler(commands=['start', 'yordam'])
-def matn(xabar):
+def start(xabar):
     bot.reply_to(xabar, f"Assalomu Alaykum {xabar.from_user.first_name}")
+
+bot.infinity_polling()
 ```
 
 
