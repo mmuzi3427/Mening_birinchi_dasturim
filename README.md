@@ -16,7 +16,10 @@
 ```python
 import telebot
 
-bot = telebot.TeleBot("TOKEN", parse_mode=None) # You can set parse_mode by default. HTML or MARKDOWN
+bot = telebot.TeleBot("TOKEN", parse_mode=None)
+@bot.message_handler(commands=['start', 'yordam'])
+def matn(xabar):
+    bot.reply_to(xabar, f"Assalomu Alaykum {xabar.from_user.first_name}")
 ```
 
 
